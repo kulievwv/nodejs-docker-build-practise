@@ -3,4 +3,4 @@ WORKDIR /home/ilovedocker/app
 COPY packages/package*.json .
 RUN npm i --omit=dev
 COPY src/* .
-CMD ["node", "main.js"]
+ENTRYPOINT ["node", "main.js"]
